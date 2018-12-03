@@ -4,7 +4,7 @@
 
 struct contas {
 	float d,c;
-	char TipoDeConta[2]; //Analítica ou Sintética
+	char TipoDeConta[2]; //AnalÃ­tica ou SintÃ©tica
 	char number[15];
 };
 struct contas q[1000];
@@ -27,7 +27,6 @@ int dc (int i,int n){
 			}
 			}
 		}
-	
 	}
 
 }
@@ -57,14 +56,12 @@ int main (){
 			printf("\nDebito:");
 			scanf("%f",& q[i].d);
 			}
-
 	}	
 	dc (i,n);
 	for (i=0;i<n;++i){
 		printf("%s ",q[i].number);		
 		printf("%.2f ",q[i].c);
 		printf("%.2f ",q[i].d);
-		
 		printf("\n");
 }
 	system("pause");
